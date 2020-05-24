@@ -1,5 +1,5 @@
 
-(* Example transaction flow for duduction on the price of a car *) 
+(* Example transaction flow for managing pricing information about cars *) 
 
 Require Import List.
 Require Import Lia.
