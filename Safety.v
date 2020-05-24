@@ -1,5 +1,6 @@
 
 (* Mechanized proof of the preservation of consensus by the transaction flow *) 
+(* The invariant established is formalized as the proposition cl *)
 
 Require Import Logic.FunctionalExtensionality.
 Require Import Lia.
