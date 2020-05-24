@@ -1,0 +1,52 @@
+
+This directory contains a formalization of the transaction flow
+process of the Hyperledger Fabric blockchain system.
+ 
+It is for review of the article 
+"Formalizing the Transaction Flow Process in Hyperledger Fabric" 
+submitted to ICFEM 2020. 
+
+The formalization is performed by 
+Ximeng Li (lixm@cnu.edu.cn)
+and 
+Xiangyu Chen 
+
+============================================================================
+
+TO MACHINE-CHECK THE FORMALIZATION:
+
+  System requirements: Coq 8.9.0
+ 
+  Compilation: make all
+
+TO STEP-THROUGH THE PROOF SCRIPTS: 
+
+  Open a proof script file in Proof General and step through it
+
+----------------------------------------------------------------------------
+
+CONTENTS OF THE FILES:
+
+LibTactics.v, SFLib.v:
+The two files are imported or adapted from the content of the Software
+Foundations library (https://softwarefoundations.cis.upenn.edu/). They 
+provide the infrastructure definitions, theorems, and tactics used in
+this development.
+
+MyUtils.v:
+Utilities for the upate of functions and mappings
+
+Entities.v:
+Formalization of the entities involved in the transaction flow
+
+TransFlow.v:
+Formalization of Hyperledger Fabric transaction flow as a transition
+system
+
+Example.v:
+Example transaction flow for duduction on the price of a car
+
+Safety.v:
+Mechanized proof of the preservation of consensus by the transaction
+flow
+
